@@ -1,0 +1,9 @@
+cd desktop 
+touch cmd.txt
+git init
+git add .
+git commit -m "add cmd.txt"
+gh auth login
+gh repo create 20231027-create-gh-repos --public --source=. --remote=upstream --push
+gh repo rename esercitzioni -y
+gh repo delete esercitzioni --yes
